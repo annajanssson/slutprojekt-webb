@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.huvudrubrik {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  margin-bottom: 20px;
+}
+
+.footer-rubrik {
+}
