@@ -3,14 +3,102 @@
   padding: 0;
 }
 
-.huvudrubrik {
+header {
+  background-color: #d3def3;
+  height: 50px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+  font-size: 20px;
+  background-color: #d3def3;
+}
+
+.navbar {
+  overflow: hidden;
+  float: left;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  padding: 14px 16px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color: #d3def3;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 15px 20px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.meny:hover {
+  background-color: #919cb1;
+}
+
+.byta {
+  text-decoration: none;
+  color: #333;
+  font-size: larger;
+}
+.horizontal-menu {
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
   display: flex;
-  justify-content: center;
+  padding: 10px;
 }
 
 footer {
-  margin-bottom: 20px;
+  background-color: #eff2fa;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 50px;
 }
 
-.footer-rubrik {
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.info h3 {
+  color: #333;
+}
+
+.info p {
+  color: #666;
+  margin: 5px 0;
+}
+
+.platsinfo {
+  color: #666;
+  margin: 5px 0;
+  text-decoration: none;
 }
