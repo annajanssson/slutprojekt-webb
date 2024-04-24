@@ -4,27 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="huvud.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link href="bowling.css" rel="stylesheet" />
+
     <title>Laserbowl</title>
   </head>
   <body>
     <header>
-      <div class="navbar">
-        <div class="dropdown">
-          <button class="btn">
-            <a href=".html"><i class="fa fa-home"></i></a>
-          </button>
-          <div class="dropdown-content">
-            <a href=".html" class="meny">c</a>
-            <a href=".html" class="meny">b</a>
-            <a href=".html" class="meny">a</a>
-          </div>
-        </div>
+      <div class="menyval">
+        <ul class="horizontal-menu">
+          <li><a href="start.html" class="byta">Hem</a></li>
+          <li><a href="#" class="byta">Boka</a></li>
+          <li><a href="#" class="byta">Information</a></li>
+          <li><a href="#" class="byta">Kontakt</a></li>
+        </ul>
       </div>
     </header>
+    <img
+      src="bakgrundbowling.jpg"
+      alt="bakgrund bowling"
+      class="bakgrund"
+      id="bakgrundbowling"
+    />
+    <h1 class="huvudrubrik">Bowling</h1>
+
     <footer>
       <div class="container">
         <div class="info">
@@ -50,4 +52,5 @@
       </div>
     </footer>
   </body>
+  <script src="bowling.js"></script>
 </html>
