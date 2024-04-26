@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="huvud.css" rel="stylesheet" />
-    <link href="bowling.css" rel="stylesheet" />
+    <link href="css/huvud.css" rel="stylesheet" />
+    <link href="css/bowling.css" rel="stylesheet" />
 
     <title>Laserbowl</title>
   </head>
@@ -20,12 +20,25 @@
       </div>
     </header>
     <img
-      src="bakgrundbowling.jpg"
+      src="img/bakgrundbowling.jpg"
       alt="bakgrund bowling"
       class="bakgrund"
       id="bakgrundbowling"
     />
     <h1 class="huvudrubrik">Bowling</h1>
+    <div class="bokning">
+      <h1>Boka bowling</h1>
+      <form id="bookingForm">
+        <label for="date">Välj datum:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time">Välj tid:</label>
+        <input type="time" id="time" name="time" required />
+
+        <button type="submit">Boka bowling</button>
+      </form>
+      <div id="message"></div>
+    </div>
 
     <footer>
       <div class="container">

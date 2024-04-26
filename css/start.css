@@ -1,0 +1,42 @@
+.bakgrund {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  opacity: 30%;
+  z-index: -1;
+}
+
+.huvudrubrik {
+  display: flex;
+  justify-content: center;
+}
+
+.logga {
+  position: absolute;
+  width: 250px;
+  top: 50px;
+}
+
+.val {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  margin-top: -500px;
+}
+
+.sekundär-rubrik {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  font-size: 40px;
+  position: absolute;
+  transform: translate(100%, -300%);
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-decoration: none;
+}
+
+.val-bild {
+  border: solid black 2px;
+}
