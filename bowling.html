@@ -13,7 +13,13 @@
       <div class="menyval">
         <ul class="horizontal-menu">
           <li><a href="start.html" class="byta">Hem</a></li>
-          <li><a href="#" class="byta">Boka</a></li>
+          <li class="dropdown">
+            <a href="#" class="byta">Boka</a>
+            <div class="dropdown-content">
+              <a href="bowling.html">Bowling</a>
+              <a href="laserdome.html">Laserdome</a>
+            </div>
+          </li>
           <li><a href="#" class="byta">Information</a></li>
           <li><a href="#" class="byta">Kontakt</a></li>
         </ul>
@@ -26,7 +32,7 @@
       id="bakgrundbowling"
     />
     <h1 class="huvudrubrik">Bowling</h1>
-    <div class="bokning">
+    <!-- <div class="bokning">
       <h1>Boka bowling</h1>
       <form id="bookingForm">
         <label for="date">Välj datum:</label>
@@ -38,14 +44,21 @@
         <button type="submit">Boka bowling</button>
       </form>
       <div id="message"></div>
+    </div> -->
+    <div class="personer-text">Antal personer</div>
+    <div class="person-container">
+      <div class="person">
+        <button class="knapp" id="minska">-</button>
+        <div class="person-count" id="personCount">1</div>
+        <button class="knapp" id="öka">+</button>
+      </div>
     </div>
-
     <footer>
       <div class="container">
         <div class="info">
           <h3>Öppettider</h3>
           <p>Måndag-fredag: 10:00 - 22:00</p>
-          <p>Lördag: 10-01</p>
+          <p>Lördag: 10-23</p>
           <p>Söndag: 11-23</p>
         </div>
         <div class="info">
