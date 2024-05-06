@@ -1,0 +1,36 @@
+.huvudrubrik {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.rutor {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-row: auto auto;
+  grid-column-gap: 10%;
+  grid-row-gap: 20px;
+  justify-content: center;
+}
+
+.underrubriker {
+  background-color: #80a9f6;
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 10px;
+}
+
+.container {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+}

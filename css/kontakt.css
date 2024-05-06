@@ -1,0 +1,10 @@
+.huvudrubrik {
+  display: flex;
+  justify-content: center;
+}
+
+.logga {
+  position: absolute;
+  width: 250px;
+  top: 50px;
+}
