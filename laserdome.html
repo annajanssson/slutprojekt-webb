@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/huvud.css" rel="stylesheet" />
     <link href="css/laserdome.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link href="css/spel.css" rel="stylesheet" />
+
     <title>Laserbowl</title>
   </head>
   <body>
@@ -28,14 +26,32 @@
         </ul>
       </div>
     </header>
-    <div class="calendar" id="calendar">
-
+    <img
+      src="img/bakgrundlaserdome.jpg"
+      alt="bakgrund laserdome"
+      class="bakgrund"
+      id="bakgrundlaserdome"
+    />
+    <h1 class="huvudrubrik">Laserdome</h1>
+    <section class="boka">
+      <div class="bokning flex_space">
+        <div class="text">
+          <h2 class="boka-rubrik">Boka laserdome</h2>
+        </div>
+        <div class="form">
+          <form class="grid">
+            <input type="date" placeholder="Datum" id="datumInput" />
+            <input type="number" placeholder="Antal personer" />
+            <input type="submit" value="Kolla lediga tider" />
+          </form>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="nere">
         <div class="info">
           <h3>Öppettider</h3>
-          <p>Måndag-fredag: 10:00 - 22:00</p>
-          <p>Lördag: 10-23</p>
+          <p>Måndag-lördag: 10:00 - 22:00</p>
           <p>Söndag: 11-23</p>
         </div>
         <div class="info">
@@ -46,14 +62,14 @@
         <div class="info">
           <h3>Plats</h3>
           <a
-            href="https://www.google.com/maps"
+            href="https://maps.app.goo.gl/awDagbZTYvpzyQeL6"
             class="platsinfo"
             target="_blank"
-            >123 Street St, Stockholm, Sverige</a
+            >Leverantörsvägen 9, 187 66 Täby</a
           >
         </div>
       </div>
     </footer>
   </body>
-  <script src="laserdome.js"></script>
+  <script src="spel.js"></script>
 </html>

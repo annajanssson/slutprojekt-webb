@@ -5,6 +5,69 @@
 
 .logga {
   position: absolute;
-  width: 250px;
+  width: 20%;
   top: 50px;
+}
+
+.hitta {
+  font-size: 35px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.karta iframe {
+  width: 95%;
+  height: 400px;
+}
+
+.karta {
+  width: 100%;
+  margin-top: 7%;
+}
+
+.telefon span,
+.mail span {
+  font-weight: bold;
+}
+
+.kontakter,
+.jobba {
+  font-size: 20px;
+  background-color: rgb(254, 244, 229);
+  border: solid black 2px;
+  border-radius: 10px;
+  margin-left: 10%;
+  overflow: auto;
+  padding: 10px;
+}
+.kontakter {
+  width: 30%;
+  margin-top: 10%;
+  height: auto;
+}
+.jobba {
+  margin-top: 50px;
+  height: auto;
+  width: 40%;
+}
+.underrubrik {
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.kontaktinfo,
+.sok {
+  margin-top: 20px;
+}
+.sok span {
+  font-weight: bold;
+}
+
+.storbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.litenbox {
+  display: flex;
+  flex-direction: column;
 }

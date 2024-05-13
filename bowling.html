@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/huvud.css" rel="stylesheet" />
+    <link href="css/spel.css" rel="stylesheet" />
     <link href="css/bowling.css" rel="stylesheet" />
 
     <title>Laserbowl</title>
@@ -39,19 +40,31 @@
         </div>
         <div class="form">
           <form class="grid">
-            <input type="date" placeholder="Datum" />
-            <input type="number" placeholder="Antal personer" />
+            <input type="date" placeholder="Datum" id="datumInput" />
+            <input
+              type="number"
+              placeholder="Antal personer"
+              id="antalPersonerInput"
+            />
             <input type="submit" value="Kolla lediga tider" />
           </form>
         </div>
       </div>
     </section>
+    <select id="tider"></select>
+    <div id="sammanfattning">
+      <h2>Bokningsinformation</h2>
+      <p><strong>Datum:</strong> <span id="valtDatum"></span></p>
+      <p><strong>Tid:</strong> <span id="valdTid"></span></p>
+      <p><strong>Antal personer:</strong> <span id="antalPersoner"></span></p>
+      <button id="bokaKnapp">Boka</button>
+    </div>
+
     <footer>
       <div class="nere">
         <div class="info">
           <h3>Öppettider</h3>
-          <p>Måndag-fredag: 10:00 - 22:00</p>
-          <p>Lördag: 10-23</p>
+          <p>Måndag-lördag: 10:00 - 22:00</p>
           <p>Söndag: 11-23</p>
         </div>
         <div class="info">
@@ -62,14 +75,14 @@
         <div class="info">
           <h3>Plats</h3>
           <a
-            href="https://www.google.com/maps"
+            href="https://maps.app.goo.gl/awDagbZTYvpzyQeL6"
             class="platsinfo"
             target="_blank"
-            >123 Street St, Stockholm, Sverige</a
+            >Leverantörsvägen 9, 187 66 Täby</a
           >
         </div>
       </div>
     </footer>
   </body>
-  <script src="bowling.js"></script>
+  <script src="spel.js"></script>
 </html>

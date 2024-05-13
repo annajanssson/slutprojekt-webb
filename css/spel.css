@@ -1,0 +1,46 @@
+.bakgrund {
+  position: relative;
+  width: 100%;
+  opacity: 60%;
+  z-index: -1;
+}
+
+.huvudrubrik {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5%;
+}
+
+input {
+  outline: none;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+}
+
+.boka {
+  padding: 10px 0;
+  background-color: #b4caf3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.boka input:nth-last-child(1) {
+  background-color: #143168;
+  color: white;
+  font-size: 20px;
+  font-family: serif;
+}
+
+.boka-rubrik {
+  text-align: center;
+  padding: 5px;
+}
