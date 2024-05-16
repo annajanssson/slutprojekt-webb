@@ -25,14 +25,27 @@
           <li><a href="konakt.html" class="byta">Kontakt</a></li>
         </ul>
       </div>
+      <div class="menu">
+        <label class="hamburger-menu"><input type="checkbox" /> </label>
+        <aside class="sidebar">
+          <nav>
+            <div><a href="start.html">Hem</a></div>
+            <div><a href="bowling.html">Bowling</a></div>
+            <div><a href="laserdome.html">Laserdome</a></div>
+            <div><a href="information.html">Information</a></div>
+            <a href="konakt.html">Kontakt</a>
+            <div></div>
+          </nav>
+        </aside>
+      </div>
     </header>
+    <h1 class="huvudrubrik">Bowling</h1>
     <img
       src="img/bakgrundbowling.jpg"
       alt="bakgrund bowling"
       class="bakgrund"
       id="bakgrundbowling"
     />
-    <h1 class="huvudrubrik">Bowling</h1>
     <section class="boka">
       <div class="bokning flex_space">
         <div class="text">
@@ -45,19 +58,25 @@
               type="number"
               placeholder="Antal personer"
               id="antalPersonerInput"
+              min="1"
+              max="10"
             />
-            <input type="submit" value="Kolla lediga tider" />
+            <select id="tider"></select>
+            <input type="submit" value="Boka" />
           </form>
         </div>
       </div>
     </section>
-    <select id="tider"></select>
-    <div id="sammanfattning">
-      <h2>Bokningsinformation</h2>
-      <p><strong>Datum:</strong> <span id="valtDatum"></span></p>
-      <p><strong>Tid:</strong> <span id="valdTid"></span></p>
-      <p><strong>Antal personer:</strong> <span id="antalPersoner"></span></p>
-      <button id="bokaKnapp">Boka</button>
+    <div class="sammanfattning" id="sammanfattning">
+      <h2 class="samman">Bokningsinformation</h2>
+      <div class="allt">
+        <p class="text"><strong>Datum:</strong> <span id="valtDatum"></span></p>
+        <p class="text"><strong>Tid:</strong> <span id="valdTid"></span></p>
+        <p class="text">
+          <strong>Antal personer:</strong> <span id="antalPersoner"></span>
+        </p>
+        <button id="bokaknapp" class="bokaknapp">Bekräfta bokning</button>
+      </div>
     </div>
 
     <footer>

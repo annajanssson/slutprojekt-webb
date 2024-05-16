@@ -1,73 +1,132 @@
+body {
+  background-color: rgb(245, 237, 228);
+}
+
 .huvudrubrik {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  height: 20%;
+  position: relative;
 }
 
-.logga {
-  position: absolute;
-  width: 20%;
-  top: 50px;
-}
-
-.hitta {
-  font-size: 35px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  text-align: center;
-}
-.karta iframe {
-  width: 95%;
-  height: 400px;
-}
-
-.karta {
-  width: 100%;
-  margin-top: 7%;
-}
-
-.telefon span,
-.mail span {
-  font-weight: bold;
-}
-
-.kontakter,
-.jobba {
-  font-size: 20px;
-  background-color: rgb(254, 244, 229);
-  border: solid black 2px;
-  border-radius: 10px;
-  margin-left: 10%;
-  overflow: auto;
-  padding: 10px;
-}
-.kontakter {
-  width: 30%;
-  margin-top: 10%;
+.huvudrubrik img {
+  max-width: 20%;
   height: auto;
-}
-.jobba {
-  margin-top: 50px;
-  height: auto;
-  width: 40%;
-}
-.underrubrik {
-  font-size: 30px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  text-align: center;
-}
-.kontaktinfo,
-.sok {
-  margin-top: 20px;
-}
-.sok span {
-  font-weight: bold;
 }
 
 .storbox {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 10px;
 }
 
 .litenbox {
   display: flex;
   flex-direction: column;
+  max-width: 40%;
+}
+
+.kontakter,
+.jobba {
+  background-color: #dce7f6;
+  border: solid 1px #143168;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.underrubrik {
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 15px;
+  color: #143168;
+}
+
+.kontaktinfo,
+.sok {
+  font-size: 18px;
+}
+
+.kontaktinfo div,
+.sok span {
+  margin-bottom: 10px;
+}
+
+.telefon span,
+.mail span,
+.sok span {
+  font-weight: bold;
+}
+
+.karta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hitta {
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#map {
+  width: 90%;
+  height: 400px;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .storbox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .litenbox {
+    max-width: 80%;
+  }
+  .karta {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .litenbox {
+    max-width: 100%;
+  }
+
+  .kontakter,
+  .jobba {
+    margin-bottom: 10px;
+  }
+  .karta {
+    width: 100%;
+  }
+}
+
+#marker {
+  background-image: url("img/pin.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
 }

@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Laserbowl</title>
   </head>
   <body>
@@ -27,20 +31,30 @@
           <li><a href="konakt.html" class="byta">Kontakt</a></li>
         </ul>
       </div>
+      <div class="menu">
+        <label class="hamburger-menu"><input type="checkbox" /> </label>
+        <aside class="sidebar">
+          <nav>
+            <div><a href="start.html">Hem</a></div>
+            <div><a href="bowling.html">Bowling</a></div>
+            <div><a href="laserdome.html">Laserdome</a></div>
+            <div><a href="information.html">Information</a></div>
+            <a href="konakt.html">Kontakt</a>
+            <div></div>
+          </nav>
+        </aside>
+      </div>
     </header>
-    <img
-      src="img/bakgrundstart.jpg"
-      alt="bakgrund start"
-      class="bakgrund topp"
-    />
-    <h1 class="huvudrubrik">
-      <img src="img/logga.png" alt="logga" class="bilder logga" />
-    </h1>
-
+    <div class="rubrik">
+      <img src="img/bakgrundstart.jpg" alt="bakgrund start" class="bakgrund" />
+      <h1 class="huvudrubrik">
+        <img src="img/logga.png" alt="logga" class="bilder logga" />
+      </h1>
+    </div>
     <div class="val">
       <div class="vidare bowling">
         <a href="bowling.html">
-          <img src="img/bowling.jpg" class="val-bild"
+          <img src="img/bowling.jpg" class="val-bild" alt="bowling bild"
         /></a>
         <h2>
           <a href="bowling.html" class="sekundär-rubrik">Bowling</a>
@@ -48,7 +62,7 @@
       </div>
       <div class="vidare laserdome">
         <a href="laserdome.html">
-          <img src="img/laserdome.jpg" class="val-bild"
+          <img src="img/laserdome.jpg" class="val-bild" alt="laserdome"
         /></a>
         <h2>
           <a href="laserdome.html" class="sekundär-rubrik">Laserdome</a>
@@ -80,4 +94,5 @@
       </div>
     </footer>
   </body>
+  <script src="huvud.js"></script>
 </html>
