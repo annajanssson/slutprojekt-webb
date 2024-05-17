@@ -1,44 +1,37 @@
 body {
   background-color: #b4c0ed;
 }
-
 .bakgrund {
   position: relative;
   width: 100%;
   opacity: 30%;
   z-index: -1;
 }
-
 .huvudrubrik {
   display: flex;
   justify-content: center;
 }
-
 .logga {
   position: absolute;
   width: 20%;
   top: 7%;
 }
-
 .val {
   display: flex;
   justify-content: space-around;
   padding: 5%;
   margin-top: -35%;
 }
-
 @media screen and (max-width: 768px) {
   .sekundär-rubrik {
     font-size: 5vw;
   }
 }
-
 .val-bild {
   border: solid black 2px;
   width: 90%;
   margin: 0 5%;
 }
-
 .sekundär-rubrik {
   color: white;
   font-size: 3vw;
@@ -51,7 +44,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .vidare {
   display: flex;
   justify-content: center;

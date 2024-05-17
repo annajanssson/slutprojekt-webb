@@ -13,14 +13,12 @@
   grid-row-gap: 20px;
   justify-content: center;
 }
-
 .underrubriker {
   background-color: #80a9f6;
   padding: 5px;
   border-radius: 10px;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,13 +26,11 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 10px;
 }
-
 .container {
   display: block;
   text-align: center;
   margin-top: 5px;
 }
-
 .priser {
   max-width: 800px;
   margin: 50px auto;
@@ -43,39 +39,32 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
 }
-
 thead tr {
   background-color: #143168;
   color: white;
 }
-
 thead th,
 tbody td,
 tfoot td {
   padding: 15px;
   text-align: center;
 }
-
 tbody tr:nth-child(odd) {
   background-color: #e0e7ff;
 }
-
 tbody tr:nth-child(even) {
   background-color: #b4caf3;
 }
-
 tfoot tr {
   background-color: #143168;
   color: white;
   font-weight: bold;
 }
-
 tfoot td {
   text-align: center;
   padding: 20px;

@@ -1,7 +1,6 @@
 body {
   background-color: rgb(245, 237, 228);
 }
-
 .huvudrubrik {
   display: flex;
   justify-content: center;
@@ -11,12 +10,10 @@ body {
   height: 20%;
   position: relative;
 }
-
 .huvudrubrik img {
   max-width: 20%;
   height: auto;
 }
-
 .storbox {
   display: flex;
   flex-wrap: wrap;
@@ -27,13 +24,11 @@ body {
   margin: 20px;
   border-radius: 10px;
 }
-
 .litenbox {
   display: flex;
   flex-direction: column;
   max-width: 40%;
 }
-
 .kontakter,
 .jobba {
   background-color: #dce7f6;
@@ -43,7 +38,6 @@ body {
   margin-bottom: 20px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-
 .underrubrik {
   font-size: 24px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -51,37 +45,31 @@ body {
   margin-bottom: 15px;
   color: #143168;
 }
-
 .kontaktinfo,
 .sok {
   font-size: 18px;
 }
-
 .kontaktinfo div,
 .sok span {
   margin-bottom: 10px;
 }
-
 .telefon span,
 .mail span,
 .sok span {
   font-weight: bold;
 }
-
 .karta {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .hitta {
   font-size: 24px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   text-align: center;
   margin-bottom: 20px;
 }
-
 #map {
   width: 90%;
   height: 400px;
@@ -89,13 +77,11 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-
 @media screen and (max-width: 768px) {
   .storbox {
     flex-direction: column;
     align-items: center;
   }
-
   .litenbox {
     max-width: 80%;
   }
@@ -103,12 +89,10 @@ body {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 600px) {
   .litenbox {
     max-width: 100%;
   }
-
   .kontakter,
   .jobba {
     margin-bottom: 10px;
@@ -117,7 +101,6 @@ body {
     width: 100%;
   }
 }
-
 #marker {
   background-image: url("../img/pin.png");
   background-size: cover;
@@ -126,7 +109,6 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-
 .mapboxgl-popup {
   max-width: 200px;
 }
