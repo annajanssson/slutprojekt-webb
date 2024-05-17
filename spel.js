@@ -25,6 +25,7 @@ function genereraTider() {
   var veckodag = valtDatum.getDay();
 
   if (veckodag === 0) {
+    //olika tider att boka beroende på vilken veckodag det är
     startTimme = 11;
   } else if (veckodag >= 1 && veckodag <= 6) {
     slutTimme = 21;
@@ -68,7 +69,7 @@ bokningsFormulär.addEventListener("submit", function (event) {
   boka();
 });
 const requiredFields = document.querySelectorAll(
-  ".kontaktformulär input[required], .kontaktformulär textarea[required]"
+  ".kontaktformulär input[required], .kontaktformulär textarea[required]" //se till att allt är ifyllt
 );
 var bokaKnapp = document.getElementById("bokaknapp");
 
