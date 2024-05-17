@@ -11,6 +11,10 @@
   font-size: 80px;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
   top: 30%;
+  transition: transform 0.3s ease;
+}
+.huvudrubrik:hover {
+  transform: scale(1.5);
 }
 .grid {
   display: grid;
