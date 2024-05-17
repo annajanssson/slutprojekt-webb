@@ -104,26 +104,15 @@ footer {
     display: none;
   }
 
-  :root {
-    --bar-width: 40px;
-    --bar-height: 4px;
-    --hamburger-gap: 6px;
-    --foreground: #000000;
-    --background: white;
-    --hamburger-margin: 5px;
-    --animation-timing: 200ms ease-in-out;
-    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-  }
-
   .hamburger-menu {
-    --x-width: calc(var(--hamburger-height) * 1.41);
+    --x-width: calc(4 * 1.41);
     display: flex;
     flex-direction: column;
-    gap: var(--hamburger-gap);
+    gap: 6px;
     width: max-content;
     position: absolute;
-    top: var(--hamburger-margin);
-    left: var(--hamburger-margin);
+    top: 6px;
+    left: 6px;
     z-index: 2;
     cursor: pointer;
   }
@@ -132,6 +121,7 @@ footer {
     --foreground: white;
     --background: #333;
   }
+
   .hamburger-menu:has(input:focus-visible)::before
     .hamburger-menu:has(input:focus-visible)::after
     .hamburger-menu
@@ -144,26 +134,25 @@ footer {
   .hamburger-menu input,
   .hamburger-menu::after {
     content: "";
-    width: var(--bar-width);
-    height: var(--bar-height);
-    background-color: var(--foreground);
+    width: 40px;
+    height: 4px;
+    background-color: black;
     border-radius: 9999px;
     transform-origin: left center;
-    transition: opacity var(--animation-timing), width var(--animation-timing),
-      rotate var(--animation-timing), translate var(--animation-timing),
-      background-color var(--animation-timing);
+    transition: opacity 200ms ease-in-out, width 200ms ease-in-out,
+      rotate 200ms ease-in-out, translate 200ms ease-in-out;
   }
 
   .hamburger-menu:has(input:checked)::before {
     rotate: 45deg;
     width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / -2);
+    translate: 0 -2px;
   }
 
   .hamburger-menu:has(input:checked)::after {
     width: var(--x-width);
     rotate: -45deg;
-    translate: 0 calc(var(--bar-height) / 2);
+    translate: 0 2px;
   }
 
   .hamburger-menu input {
